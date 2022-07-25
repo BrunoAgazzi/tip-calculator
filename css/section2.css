@@ -1,0 +1,84 @@
+.section2{
+    background-color: var(--VeryDarkCyan);
+    width: 40%;
+    border-radius: 10px;
+    padding: 20px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: section2Animate 3s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    
+
+}
+
+.total-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-container h2{
+  color: var(--White);
+  margin: 5px 0;    
+  font-size: 14px;
+}
+.total-container h3{
+  color: var(--GrayishCyan);
+  margin:  0;
+  font-size: 12px;
+}
+
+.total-number{
+    font-size: 40px !important;
+    color: var(--StrongCyan) !important;
+}
+
+.section2 button{
+    background-color: var(--StrongCyan);
+    border: none;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    color: var(--VeryDarkCyan);
+    font-family: var(--Font1);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;    
+}
+
+.section2 button:active{
+    box-shadow: none;
+    background-color: var(--LightGrayishCyan );
+}
+
+
+
+
+/* Animations */
+
+@keyframes section2Animate {
+    0%{
+        transform: translateX(500px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+@media (max-width: 375px) {
+    .section2{
+        width: 75%;
+        margin: 0px auto;
+        padding: 20px;
+    
+    }
+    .total-number{
+        font-size: 30px !important;
+    }
+
+    .section2 button{
+        margin-top: 30px;
+    }
+   
+}
